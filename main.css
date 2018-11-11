@@ -1,29 +1,22 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Courier New', Courier, monospace
 }
 
-#product-overview {
-  background-color: #ff1b68;
+h1 {
+  color: blue;
+  font-family: sans-serif  
 }
 
-.section-title {
-  color: #2ddf5c;
-  font-family: inherit;
+code {
+  color: red;
+  font-family: monospace
 }
 
-#product-overview h1 {
-  color: white;
-  font-family: "Anton", sans-serif;
-}
-
-h2 + p {
-  color: red
-}
-
-h2 ~ h3 {
-  color: blue
-}
-
-main > h2 {
+.second code {
   color: green
+}
+
+li:not(:first-of-type) {
+  color: white;
+  background-color: black
 }
