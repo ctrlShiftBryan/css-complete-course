@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>uHost</title>
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="margin-collapse.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div id="mc-1">
+        <p>Adjacent Siblings</p>
+        <div>one</div>
+        <div>two</div>
+      </div>
+
+      <div class="border">
+        A parent with children that have a margin
+        <div class="mc-2">
+          <div>one</div>
+          <div>two</div>
+        </div>
+      </div>
+      <div class="border">
+        If the parent element has padding, inline content (other than the child
+        elements) or a border, this behavior should not occur, the child margin
+        will instead be added to the content of the wrapping parent element.
+        <div class="mc-2 border">
+          <div>one</div>
+          <div>two</div>
+        </div>
+      </div>
+      <div class="border">
+            This case probably doesn't occur that often but if you got an element with no content, no padding, no border and no height, then the top and bottom margin will be merged into one single margin. Again, the bigger one wins.
+            <div id="empty"></div>
+      </div>
+    </main>
+  </body>
+</html>
