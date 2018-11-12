@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+
+div {
+  padding: 10px 5px 2px 15px;
+  border: 1px solid black;
+  margin: 5px 10px 8px 0px;
+}
+
+ol + div {
+  height: 300px;
+  width: 50%;
+  display: none;
+}
+
+div + div:hover {
+ background-color: tan;
+}
